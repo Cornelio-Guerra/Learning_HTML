@@ -1,0 +1,79 @@
+<meta charset="UTF-8">
+
+<h1>Mi codigo</h1>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+
+    if (edad >= 18 && tieneLicencia == "S") {
+
+        imprimir("Si, usted si puede manejar")
+
+    } else {
+
+        imprimir("No, usted no manejar");
+
+    }
+
+
+</script>
+
+<h1>Codigo del profesor</h1>
+
+<meta charset="UTF-8">
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+
+    if(edad >= 18) {
+        if(tieneLicencia == "S") {
+            imprimir("Puedes conducir");
+        }
+    }
+
+    if(edad < 18) {
+        imprimir("No puedes conducir");
+    }
+
+    //o
+
+    if((edad >= 18) && (tieneLicencia == "S")) {
+            imprimir("Puedes conducir");
+        }
+
+
+    if(edad < 18) {
+        imprimir("No puedes conducir");
+    }
+
+    // o
+
+
+    if((edad >= 18) && (tieneLicencia == "S")) {
+            imprimir("Puedes conducir");
+        }
+
+    else {
+        imprimir("No puedes conducir");
+    }
+
+
+</script>
